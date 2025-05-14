@@ -1,12 +1,18 @@
-
+body{
+  margin: 0;
+  font-family: 'ABeeZee', sans-serif;
+  font-weight: 100;
+  background-color:  #FFF2F1;
+}
 
 .navbar {
   background-color: #FFBBB5; 
   color: #4F2819;
-  padding: 1px 10px;
+  padding: 1px 20px;
   display: flex;
-  justify-content: safe;
+  justify-content: space-between;
   align-items: center;
+  max-height: 100px;
 }
 
 .logo img {
@@ -28,14 +34,10 @@
 .nav-links a {
   text-decoration: none;
   color: #3a1f1f; /* marrom escuro */
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 500;
 }
 
-body {
-  background-color: #FFF2F1;
-  margin: 0;
-}
 
 h1 {
   color: #4F2819;
@@ -72,6 +74,7 @@ footer {
   color: white;
   padding: 30px;
   font-family: 'Arial', sans-serif;
+  bottom: 0;
 }
 
 .footer-container {
@@ -79,6 +82,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
+  align-items: center;
 }
 
 .footer-logo img {
