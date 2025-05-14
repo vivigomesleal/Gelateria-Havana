@@ -41,7 +41,28 @@
 <main>
 
     <section class="carrosel">
+<!-- vamos mudar as imagens do carrocéu, esperar as fotos da magabis -->
+      <figure>
+    <figure class="imagem-principal">
+      <img id="imagemAtual" src="assets/images/img-havana-cadeiras e mesas.jpg" alt="Imagem principal">
+    </figure>
+    <figure class="miniaturas">
+      <img src="assets/images/img-havana-cadeiras e mesas.jpg" alt="Vista da Gelateria Havana com mesas de cor cinza e cadeidas de cor marrom espalhadas para os clientes sentarem " class="miniatura ativa" onclick="selecionarImagem(this)">
+      <img src="assets/images/img-havana-entrada.jpg" alt="Vista da entrada da Gelateria Havana por onde o cliente entra para poder se servir" class="miniatura" onclick="selecionarImagem(this)">
+      <img src="assets/images/img-havana-vista da bancada dos sorvetes.jpg" alt="Vista de longe da Passarela onde fica os gelatos self service por onde o cliente passa para se servir" class="miniatura" onclick="selecionarImagem(this)">
+      <img src="assets/images/img-havana-entrada.jpg" alt="Imagem 4" class="miniatura" onclick="selecionarImagem(this)">
+    </figure>
+  </figure>
 
+  <script>
+    function selecionarImagem(img) {
+      const imagemPrincipal = document.getElementById("imagemAtual");
+      imagemPrincipal.src = img.src;
+
+      document.querySelectorAll(".miniatura").forEach(el => el.classList.remove("ativa"));
+      img.classList.add("ativa");
+    }
+  </script>
     </section>
 
 <section class="texto-apresentacao">
