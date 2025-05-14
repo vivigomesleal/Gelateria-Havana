@@ -60,7 +60,52 @@ text {
   margin: 5px;
   padding: 0 30px;
   
-  
+}
+
+.galeria {
+  max-width: 800px;
+  margin: auto;
+}
+
+.imagem-principal img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: filter 0.3s ease;
+}
+
+.imagem-principal img:hover {
+  filter: blur(3px);
+}
+
+.miniaturas {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.miniatura {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.miniatura:hover {
+  opacity: 1;
+  filter: blur(2px);
+}
+
+.miniatura.ativa {
+  border: 2px solid #00ffcc;
+  opacity: 1;
+  filter: none;
 }
 
 ul {
